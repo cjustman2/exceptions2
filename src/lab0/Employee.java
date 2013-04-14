@@ -52,6 +52,8 @@ public class Employee {
     public void setDaysVacation(int daysVacation) {
         if(daysVacation >= 0){
         this.daysVacation = daysVacation;
+        }else{
+        throw new IllegalArgumentException();
         }
     }
 

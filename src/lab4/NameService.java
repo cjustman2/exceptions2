@@ -19,6 +19,9 @@ public class NameService {
      * @return the last name
      */
     public String extractLastName(String fullName) {
+        if(fullName == null || fullName.length() < 2){
+            throw new IllegalArgumentException();
+        }
         String[] nameParts = fullName.split(" ");
         return nameParts[LAST_NAME_IDX];
     }

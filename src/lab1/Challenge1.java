@@ -27,7 +27,9 @@ public class Challenge1 {
     }
     
     public String extractLastName(String fullName) {
+       
         String[] nameParts = fullName.split(" ");
+        
         return nameParts[LAST_NAME_IDX];
     }
 
